@@ -422,12 +422,12 @@ class Spirit_Of_Football_Awards_CPT {
 	/**
 	 * Fixes the Custom Taxonomy metabox.
 	 *
-	 * @see https://core.trac.wordaward.org/ticket/10982
+	 * @see https://core.trac.wordpress.org/ticket/10982
 	 *
 	 * @since 1.0.0
 	 *
 	 * @param array $args The existing arguments.
-	 * @param int   $post_id The WordAwards post ID.
+	 * @param int   $post_id The WordPress Post ID.
 	 */
 	public function taxonomy_fix_metabox( $args, $post_id ) {
 
@@ -545,12 +545,12 @@ class Spirit_Of_Football_Awards_CPT {
 	/**
 	 * Fixes the alternative Custom Taxonomy metabox.
 	 *
-	 * @see https://core.trac.wordaward.org/ticket/10982
+	 * @see https://core.trac.wordpress.org/ticket/10982
 	 *
 	 * @since 1.0.0
 	 *
 	 * @param array $args The existing arguments.
-	 * @param int   $post_id The WordAwards post ID.
+	 * @param int   $post_id The WordPress Post ID.
 	 */
 	public function taxonomy_alt_fix_metabox( $args, $post_id ) {
 

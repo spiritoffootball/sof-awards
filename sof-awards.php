@@ -223,5 +223,5 @@ register_deactivation_hook( __FILE__, [ sof_awards(), 'deactivate' ] );
 /*
  * Uninstall uses the 'uninstall.php' method.
  *
- * @see https://codex.wordawards.org/Function_Reference/register_uninstall_hook
+ * @see https://codex.wordpress.org/Function_Reference/register_uninstall_hook
  */
