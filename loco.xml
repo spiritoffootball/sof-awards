@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="SOF Awards">
+	<domain name="sof-awards">
+		<project name="SOF Awards" slug="sof-awards">
+			<source>
+				<directory>.</directory>
+			</source>
+			<target>
+				<directory>languages</directory>
+			</target>
+			<template>
+				<file>languages/sof-awards.pot</file>
+			</template>
+		</project>
+	</domain>
+</bundle>
