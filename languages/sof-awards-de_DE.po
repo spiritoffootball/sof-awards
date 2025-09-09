@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-09-06T10:57:36+00:00\n"
-"PO-Revision-Date: 2025-09-09 11:09+0000\n"
+"PO-Revision-Date: 2025-09-09 11:11+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: sof-awards\n"
 "Language: de_DE\n"
@@ -45,7 +45,7 @@ msgstr "Neu hinzufügen"
 
 #: includes/class-awards-cpt.php:191
 msgid "Add New Award"
-msgstr "Neue Auszeichnung hinzufügen"
+msgstr "Auszeichnung hinzufügen"
 
 #: includes/class-awards-cpt.php:514
 msgid "Add New Award Tag"
