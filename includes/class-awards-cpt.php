@@ -71,25 +71,25 @@ class Spirit_Of_Football_Awards_CPT {
 	 * @access public
 	 * @var string
 	 */
-	public $taxonomy_rest_base = 'award-types';
+	public $taxonomy_rest_base = 'award-type';
 
 	/**
-	 * Alternative Taxonomy name.
+	 * Free Taxonomy name.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @var string
 	 */
-	public $taxonomy_alt_name = 'award-tag';
+	public $taxonomy_free_name = 'award-tag';
 
 	/**
-	 * Alternative Taxonomy REST base.
+	 * Free Taxonomy REST base.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @var string
 	 */
-	public $taxonomy_alt_rest_base = 'award-tags';
+	public $taxonomy_free_rest_base = 'award-tag';
 
 	/**
 	 * Constructor.
@@ -134,10 +134,8 @@ class Spirit_Of_Football_Awards_CPT {
 		add_filter( 'wp_terms_checklist_args', [ $this, 'taxonomy_fix_metabox' ], 10, 2 );
 		add_action( 'restrict_manage_posts', [ $this, 'taxonomy_filter_post_type' ] );
 
-		// Create alternative taxonomy.
-		add_action( 'init', [ $this, 'taxonomy_alt_create' ] );
-		add_filter( 'wp_terms_checklist_args', [ $this, 'taxonomy_alt_fix_metabox' ], 10, 2 );
-		add_action( 'restrict_manage_posts', [ $this, 'taxonomy_alt_filter_post_type' ] );
+		// Create free-tagging taxonomy.
+		add_action( 'init', [ $this, 'taxonomy_free_create' ] );
 
 	}
 
@@ -485,11 +483,11 @@ class Spirit_Of_Football_Awards_CPT {
 	// -----------------------------------------------------------------------------------
 
 	/**
-	 * Creates our alternative Custom Taxonomy.
+	 * Create our free-tagging Custom Taxonomy.
 	 *
 	 * @since 1.0.0
 	 */
-	public function taxonomy_alt_create() {
+	public function taxonomy_free_create() {
 
 		// Only register once.
 		static $registered;
@@ -497,26 +495,29 @@ class Spirit_Of_Football_Awards_CPT {
 			return;
 		}
 
-		// Arguments.
+		// Define Taxonomy arguments.
 		$args = [
 
-			// Same as "category".
-			'hierarchical'      => true,
+			// General.
+			'public'            => true,
+			'hierarchical'      => false,
 
 			// Labels.
 			'labels'            => [
-				'name'              => _x( 'Award Tags', 'taxonomy general name', 'sof-awards' ),
-				'singular_name'     => _x( 'Award Tag', 'taxonomy singular name', 'sof-awards' ),
-				'search_items'      => __( 'Search Award Tags', 'sof-awards' ),
-				'all_items'         => __( 'All Award Tags', 'sof-awards' ),
-				'parent_item'       => __( 'Parent Award Tag', 'sof-awards' ),
-				'parent_item_colon' => __( 'Parent Award Tag:', 'sof-awards' ),
-				'edit_item'         => __( 'Edit Award Tag', 'sof-awards' ),
-				'update_item'       => __( 'Update Award Tag', 'sof-awards' ),
-				'add_new_item'      => __( 'Add New Award Tag', 'sof-awards' ),
-				'new_item_name'     => __( 'New Award Tag Name', 'sof-awards' ),
-				'menu_name'         => __( 'Award Tags', 'sof-awards' ),
-				'not_found'         => __( 'No Award Tags found', 'sof-awards' ),
+				'name'                       => _x( 'Award Tags', 'taxonomy general name', 'sof-awards' ),
+				'singular_name'              => _x( 'Award Tag', 'taxonomy singular name', 'sof-awards' ),
+				'menu_name'                  => __( 'Award Tags', 'sof-awards' ),
+				'search_items'               => __( 'Search Award Tags', 'sof-awards' ),
+				'all_items'                  => __( 'All Award Tags', 'sof-awards' ),
+				'edit_item'                  => __( 'Edit Award Tag', 'sof-awards' ),
+				'update_item'                => __( 'Update Award Tag', 'sof-awards' ),
+				'add_new_item'               => __( 'Add New Award Tag', 'sof-awards' ),
+				'new_item_name'              => __( 'New Award Tag Name', 'sof-awards' ),
+				'not_found'                  => __( 'No Award Tags found', 'sof-awards' ),
+				'popular_items'              => __( 'Popular Award Tags', 'sof-awards' ),
+				'separate_items_with_commas' => __( 'Separate Award Tags with commas', 'sof-awards' ),
+				'add_or_remove_items'        => __( 'Add or remove Award Tag', 'sof-awards' ),
+				'choose_from_most_used'      => __( 'Choose from the most popular Award Tags', 'sof-awards' ),
 			],
 
 			// Rewrite rules.
@@ -530,78 +531,15 @@ class Spirit_Of_Football_Awards_CPT {
 
 			// REST setup.
 			'show_in_rest'      => true,
-			'rest_base'         => $this->taxonomy_alt_rest_base,
+			'rest_base'         => $this->taxonomy_free_rest_base,
 
 		];
 
-		// Register a taxonomy for this CPT.
-		register_taxonomy( $this->taxonomy_alt_name, $this->post_type_name, $args );
+		// Go ahead and register the Taxonomy now.
+		register_taxonomy( $this->taxonomy_free_name, $this->post_type_name, $args );
 
 		// Flag done.
 		$registered = true;
-
-	}
-
-	/**
-	 * Fixes the alternative Custom Taxonomy metabox.
-	 *
-	 * @see https://core.trac.wordpress.org/ticket/10982
-	 *
-	 * @since 1.0.0
-	 *
-	 * @param array $args The existing arguments.
-	 * @param int   $post_id The WordPress Post ID.
-	 */
-	public function taxonomy_alt_fix_metabox( $args, $post_id ) {
-
-		// If rendering metabox for our taxonomy.
-		if ( isset( $args['taxonomy'] ) && $args['taxonomy'] === $this->taxonomy_alt_name ) {
-
-			// Setting 'checked_ontop' to false seems to fix this.
-			$args['checked_ontop'] = false;
-
-		}
-
-		// --<
-		return $args;
-
-	}
-
-	/**
-	 * Adds a filter for the alternative Custom Taxonomy to the Custom Post Type listing.
-	 *
-	 * @since 1.0.0
-	 */
-	public function taxonomy_alt_filter_post_type() {
-
-		// Access current post type.
-		global $typenow;
-
-		// Bail if not our post type.
-		if ( $typenow !== $this->post_type_name ) {
-			return;
-		}
-
-		// Get tax object.
-		$taxonomy = get_taxonomy( $this->taxonomy_alt_name );
-
-		// Build args.
-		$args = [
-			/* translators: %s: The plural name of the taxonomy terms. */
-			'show_option_all' => sprintf( __( 'Show All %s', 'sof-awards' ), $taxonomy->label ),
-			'taxonomy'        => $this->taxonomy_alt_name,
-			'name'            => $this->taxonomy_alt_name,
-			'orderby'         => 'name',
-			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.NonceVerification.Recommended
-			'selected'        => isset( $_GET[ $this->taxonomy_alt_name ] ) ? wp_unslash( $_GET[ $this->taxonomy_alt_name ] ) : '',
-			'show_count'      => true,
-			'hide_empty'      => true,
-			'value_field'     => 'slug',
-			'hierarchical'    => 1,
-		];
-
-		// Show a dropdown.
-		wp_dropdown_categories( $args );
 
 	}
 

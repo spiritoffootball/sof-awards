@@ -10,85 +10,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2025-09-06T10:57:36+00:00\n"
-"PO-Revision-Date: 2025-09-08 10:40+0000\n"
+"PO-Revision-Date: 2025-09-09 11:09+0000\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Domain: sof-awards\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-8.2.4"
-
-#. Plugin Name of the plugin
-#: sof-awards.php
-msgid "SOF Awards"
-msgstr "SOF Auszeichnungen"
-
-#. Plugin URI of the plugin
-#: sof-awards.php
-msgid "https://github.com/spiritoffootball/sof-awards"
-msgstr "https://github.com/spiritoffootball/sof-awards"
-
-#. Description of the plugin
-#: sof-awards.php
-msgid "Provides \"Awards\" functionality for the Spirit of Football website."
-msgstr ""
-
-#. Author of the plugin
-#: sof-awards.php
-msgid "Christian Wach"
-msgstr "Christian Wach"
-
-#. Author URI of the plugin
-#: sof-awards.php
-msgid "https://haystack.co.uk"
-msgstr "https://haystack.co.uk"
-
-#: includes/class-awards-acf.php:139
-msgid "Award Details"
-msgstr "Details zur Auszeichnung"
-
-#: includes/class-awards-acf.php:177
-msgid "Award Badge"
-msgstr "Auszeichnungsschild"
-
-#: includes/class-awards-acf.php:180
-msgid "The \"Badge\" of the Award."
-msgstr "Das „Abzeichen“ der Auszeichnung."
-
-#: includes/class-awards-acf.php:201
-msgid "Awarded By"
-msgstr "Vergeben von"
-
-#: includes/class-awards-acf.php:204
-msgid "Who gave this Award? Examples: DFB, etc."
-msgstr "Wer hat diese Auszeichnung verliehen? Beispiele: DFB usw."
-
-#: includes/class-awards-acf.php:217
-msgid "Organisation Logo"
-msgstr "Organisationslogo"
-
-#: includes/class-awards-acf.php:220
-msgid "Optional Logo of the Awarding Organisation."
-msgstr "Optionales Logo der verleihenden Organisation."
-
-#: includes/class-awards-acf.php:250
-msgid "Year"
-msgstr "Jahr"
-
-#: includes/class-awards-acf.php:253
-msgid "In which year was the Award given?"
-msgstr "In welchem ​​Jahr wurde die Auszeichnung verliehen?"
-
-#: includes/class-awards-acf.php:276
-msgid "About this Award"
-msgstr "Über diese Auszeichnung"
-
-#: includes/class-awards-acf.php:279
-msgid "Use this field to describe the Award."
-msgstr "Verwenden Sie dieses Feld, um die Auszeichnung zu beschreiben."
-
-#: includes/class-awards-acf.php:296
-msgid "Award Image"
-msgstr "Auszeichnungsbild"
 
 #: includes/class-awards-acf.php:299
 msgid "A representative Image for the Award, e.g. receiving the Award."
@@ -96,17 +23,13 @@ msgstr ""
 "Ein repräsentatives Bild für die Auszeichnung, z. B. ein Bild von der "
 "Preisverleihung."
 
-#: includes/class-awards-acf.php:320
-msgid "Award File"
-msgstr "Auszeichnungsdatei"
+#: includes/class-awards-acf.php:276
+msgid "About this Award"
+msgstr "Über diese Auszeichnung"
 
-#: includes/class-awards-acf.php:323
-msgid "Downloadable File for the Award."
-msgstr "Herunterladbare Datei für die Auszeichnung."
-
-#: includes/class-awards-acf.php:344
-msgid "Links"
-msgstr "Web-Links"
+#: includes/class-awards-cpt.php:353
+msgid "Add an identifying name for the Award"
+msgstr "Fügen Sie einen identifizierenden Namen für die Auszeichnung hinzu"
 
 #: includes/class-awards-acf.php:347
 msgid "Add any links that are relevant to this Award"
@@ -116,106 +39,84 @@ msgstr "Fügen Sie alle Links hinzu, die für diese Auszeichnung relevant sind"
 msgid "Add link"
 msgstr "Link hinzufügen"
 
-#: includes/class-awards-acf.php:363
-msgid "Link Label"
-msgstr "Web-Link Beschriftung"
-
-#: includes/class-awards-acf.php:373
-msgid "Link"
-msgstr "Web-Link"
-
-#: includes/class-awards-cpt.php:190 includes/class-awards-cpt.php:201
-msgid "Awards"
-msgstr "Auszeichnungen"
-
-#: includes/class-awards-cpt.php:191
-msgid "Award"
-msgstr "Auszeichnung"
-
-#: includes/class-awards-cpt.php:192
+#: includes/class-awards-cpt.php:190
 msgid "Add New"
 msgstr "Neu hinzufügen"
 
-#: includes/class-awards-cpt.php:193
+#: includes/class-awards-cpt.php:191
 msgid "Add New Award"
 msgstr "Neue Auszeichnung hinzufügen"
 
+#: includes/class-awards-cpt.php:514
+msgid "Add New Award Tag"
+msgstr "Schlagwort hinzufügen"
+
+#: includes/class-awards-cpt.php:391
+msgid "Add New Award Type"
+msgstr "Kategorie hinzufügen"
+
+#: includes/class-awards-cpt.php:519
+msgid "Add or remove Award Tag"
+msgstr "Schlagwort hinzufügen oder entfernen"
+
+#: includes/class-awards-cpt.php:511
+msgid "All Award Tags"
+msgstr "Alle Schlagwörter"
+
+#: includes/class-awards-cpt.php:386
+msgid "All Award Types"
+msgstr "Alle Kategorien"
+
 #: includes/class-awards-cpt.php:194
-msgid "Edit Award"
-msgstr "Auszeichnung bearbeiten"
-
-#: includes/class-awards-cpt.php:195
-msgid "New Award"
-msgstr "Neue Auszeichnung"
-
-#: includes/class-awards-cpt.php:196
 msgid "All Awards"
 msgstr "Alle Auszeichnungen"
 
-#: includes/class-awards-cpt.php:197
-msgid "View Award"
-msgstr "Auszeichnung ansehen"
+#: includes/class-awards-cpt.php:189
+msgid "Award"
+msgstr "Auszeichnung"
 
-#: includes/class-awards-cpt.php:198
-msgid "Search Awards"
-msgstr "Auszeichnungen suchen"
+#: includes/class-awards-acf.php:177
+msgid "Award Badge"
+msgstr "Auszeichnungsschild"
 
-#: includes/class-awards-cpt.php:199
-msgid "No matching Award found"
-msgstr "Keine passende Auszeichnung gefunden"
-
-#: includes/class-awards-cpt.php:200
-msgid "No Awards found in Trash"
-msgstr "Keine Auszeichnungen im Papierkorb gefunden"
-
-#: includes/class-awards-cpt.php:211
-msgid "Spirit of Football Awards"
-msgstr "Spirit of Football Auszeichnungen"
+#: includes/class-awards-acf.php:139
+msgid "Award Details"
+msgstr "Details zur Auszeichnung"
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:275
+#: includes/class-awards-cpt.php:326
 #, php-format
-msgid "Award updated. <a href=\"%s\">View Award</a>"
-msgstr "Auszeichnung aktualisiert. <a href=\"%s\">Auszeichnung ansehen</a>"
+msgid "Award draft updated. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
+msgstr ""
+"Entwurf für die Auszeichnung aktualisiert. <a target=\"_blank\" href=\"%s\">"
+"Vorschau Auszeichnung</a>"
 
-#: includes/class-awards-cpt.php:280
-msgid "Custom field updated."
-msgstr "Benutzerdefiniertes Feld aktualisiert."
+#: includes/class-awards-acf.php:320
+msgid "Award File"
+msgstr "Auszeichnungsdatei"
 
-#: includes/class-awards-cpt.php:281
-msgid "Custom field deleted."
-msgstr "Benutzerdefiniertes Feld gelöscht."
-
-#: includes/class-awards-cpt.php:282
-msgid "Award updated."
-msgstr "Auszeichnung aktualisiert."
-
-#. translators: %s: The date and time of the revision.
-#: includes/class-awards-cpt.php:291
-#, php-format
-msgid "Award restored to revision from %s"
-msgstr "Auszeichnung wurde auf die Version von %s zurückgesetzt."
+#: includes/class-awards-acf.php:296
+msgid "Award Image"
+msgstr "Auszeichnungsbild"
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:302
+#: includes/class-awards-cpt.php:300
 #, php-format
 msgid "Award published. <a href=\"%s\">View Award</a>"
 msgstr "Auszeichnung veröffentlicht. <a href=\"%s\">Auszeichnung ansehen</a>"
 
-#: includes/class-awards-cpt.php:307
+#. translators: %s: The date and time of the revision.
+#: includes/class-awards-cpt.php:289
+#, php-format
+msgid "Award restored to revision from %s"
+msgstr "Auszeichnung wurde auf die Version von %s zurückgesetzt."
+
+#: includes/class-awards-cpt.php:305
 msgid "Award saved."
 msgstr "Auszeichnung gespeichert."
 
-#. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:312
-#, php-format
-msgid "Award submitted. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
-msgstr ""
-"Auszeichnung eingereicht. <a target=\"_blank\" href=\"%s\">Auszeichnung "
-"vorschauen</a>"
-
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-awards-cpt.php:319
+#: includes/class-awards-cpt.php:317
 #, php-format
 msgid ""
 "Award scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
@@ -224,125 +125,234 @@ msgstr ""
 "Auszeichnung geplant für: <strong>%1$s</strong>. <a target=\"_blank\" "
 "href=\"%2$s\">Auszeichnung vorschauen</a>"
 
+#. translators: %s: The permalink.
+#: includes/class-awards-cpt.php:310
+#, php-format
+msgid "Award submitted. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
+msgstr ""
+"Auszeichnung eingereicht. <a target=\"_blank\" href=\"%s\">Auszeichnung "
+"vorschauen</a>"
+
+#: includes/class-awards-cpt.php:509
+msgid "Award Tags"
+msgstr "Schlagwörter"
+
+#: includes/class-awards-cpt.php:393
+msgid "Award Types"
+msgstr "Kategorien"
+
+#: includes/class-awards-cpt.php:280
+msgid "Award updated."
+msgstr "Auszeichnung aktualisiert."
+
+#. translators: %s: The permalink.
+#: includes/class-awards-cpt.php:273
+#, php-format
+msgid "Award updated. <a href=\"%s\">View Award</a>"
+msgstr "Auszeichnung aktualisiert. <a href=\"%s\">Auszeichnung ansehen</a>"
+
+#: includes/class-awards-acf.php:201
+msgid "Awarded By"
+msgstr "Vergeben von"
+
+#: includes/class-awards-cpt.php:188 includes/class-awards-cpt.php:199
+msgid "Awards"
+msgstr "Auszeichnungen"
+
+#: includes/class-awards-cpt.php:520
+msgid "Choose from the most popular Award Tags"
+msgstr "Wählen Sie aus den beliebtesten Schlagwörter aus"
+
+#. Author of the plugin
+#: sof-awards.php
+msgid "Christian Wach"
+msgstr "Christian Wach"
+
+#: includes/class-awards-cpt.php:279
+msgid "Custom field deleted."
+msgstr "Benutzerdefiniertes Feld gelöscht."
+
+#: includes/class-awards-cpt.php:278
+msgid "Custom field updated."
+msgstr "Benutzerdefiniertes Feld aktualisiert."
+
+#: includes/class-awards-acf.php:323
+msgid "Downloadable File for the Award."
+msgstr "Herunterladbare Datei für die Auszeichnung."
+
+#: includes/class-awards-cpt.php:192
+msgid "Edit Award"
+msgstr "Auszeichnung bearbeiten"
+
+#: includes/class-awards-cpt.php:512
+msgid "Edit Award Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: includes/class-awards-cpt.php:389
+msgid "Edit Award Type"
+msgstr "Kategorie bearbeiten"
+
+#. Plugin URI of the plugin
+#: sof-awards.php
+msgid "https://github.com/spiritoffootball/sof-awards"
+msgstr "https://github.com/spiritoffootball/sof-awards"
+
+#. Author URI of the plugin
+#: sof-awards.php
+msgid "https://haystack.co.uk"
+msgstr "https://haystack.co.uk"
+
+#: includes/class-awards-acf.php:253
+msgid "In which year was the Award given?"
+msgstr "In welchem ​​Jahr wurde die Auszeichnung verliehen?"
+
+#: includes/class-awards-acf.php:373
+msgid "Link"
+msgstr "Web-Link"
+
+#: includes/class-awards-acf.php:363
+msgid "Link Label"
+msgstr "Web-Link Beschriftung"
+
+#: includes/class-awards-acf.php:344
+msgid "Links"
+msgstr "Web-Links"
+
 #. translators: Publish box date format - see https://php.net/date
-#: includes/class-awards-cpt.php:321
+#: includes/class-awards-cpt.php:319
 msgid "M j, Y @ G:i"
 msgstr "M j, Y @ G:i"
 
-#. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:328
-#, php-format
-msgid "Award draft updated. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
-msgstr ""
-"Entwurf für die Auszeichnung aktualisiert. <a target=\"_blank\" href=\"%s\">"
-"Vorschau Auszeichnung</a>"
+#: includes/class-awards-cpt.php:193
+msgid "New Award"
+msgstr "Neue Auszeichnung"
 
-#: includes/class-awards-cpt.php:355
-msgid "Add an identifying name for the Award"
-msgstr "Fügen Sie einen identifizierenden Namen für die Auszeichnung hinzu"
-
-#: includes/class-awards-cpt.php:385
-msgctxt "taxonomy general name"
-msgid "Award Types"
-msgstr ""
-
-#: includes/class-awards-cpt.php:386
-msgctxt "taxonomy singular name"
-msgid "Award Type"
-msgstr ""
-
-#: includes/class-awards-cpt.php:387
-msgid "Search Award Types"
-msgstr ""
-
-#: includes/class-awards-cpt.php:388
-msgid "All Award Types"
-msgstr ""
-
-#: includes/class-awards-cpt.php:389
-msgid "Parent Award Type"
-msgstr ""
-
-#: includes/class-awards-cpt.php:390
-msgid "Parent Award Type:"
-msgstr ""
-
-#: includes/class-awards-cpt.php:391
-msgid "Edit Award Type"
-msgstr ""
+#: includes/class-awards-cpt.php:515
+msgid "New Award Tag Name"
+msgstr "Neuer Schlagwortname"
 
 #: includes/class-awards-cpt.php:392
-msgid "Update Award Type"
-msgstr ""
+msgid "New Award Type Name"
+msgstr "Neuer Kategoriename"
 
-#: includes/class-awards-cpt.php:393
-msgid "Add New Award Type"
-msgstr ""
+#: includes/class-awards-cpt.php:516
+msgid "No Award Tags found"
+msgstr "Keine Schlagwörter gefunden"
 
 #: includes/class-awards-cpt.php:394
-msgid "New Award Type Name"
-msgstr ""
-
-#: includes/class-awards-cpt.php:395
-msgid "Award Types"
-msgstr ""
-
-#: includes/class-awards-cpt.php:396
 msgid "No Award Types found"
+msgstr "Keine Kategorien gefunden"
+
+#: includes/class-awards-cpt.php:198
+msgid "No Awards found in Trash"
+msgstr "Keine Auszeichnungen im Papierkorb gefunden"
+
+#: includes/class-awards-cpt.php:197
+msgid "No matching Award found"
+msgstr "Keine passende Auszeichnung gefunden"
+
+#: includes/class-awards-acf.php:220
+msgid "Optional Logo of the Awarding Organisation."
+msgstr "Optionales Logo der verleihenden Organisation."
+
+#: includes/class-awards-acf.php:217
+msgid "Organisation Logo"
+msgstr "Organisationslogo"
+
+#: includes/class-awards-cpt.php:387
+msgid "Parent Award Type"
+msgstr "Übergeordnete Kategorie"
+
+#: includes/class-awards-cpt.php:388
+msgid "Parent Award Type:"
+msgstr "Übergeordnete Kategorie:"
+
+#: includes/class-awards-cpt.php:517
+msgid "Popular Award Tags"
+msgstr "Beliebte Schlagwörter"
+
+#. Description of the plugin
+#: sof-awards.php
+msgid "Provides \"Awards\" functionality for the Spirit of Football website."
 msgstr ""
+"Stellt die Funktionalität für \"Auszeichnungen\" auf der Spirit of Football-"
+"Website bereit."
+
+#: includes/class-awards-cpt.php:510
+msgid "Search Award Tags"
+msgstr "Schlagwörter suchen"
+
+#: includes/class-awards-cpt.php:385
+msgid "Search Award Types"
+msgstr "Kategorien suchen"
+
+#: includes/class-awards-cpt.php:196
+msgid "Search Awards"
+msgstr "Auszeichnungen suchen"
+
+#: includes/class-awards-cpt.php:518
+msgid "Separate Award Tags with commas"
+msgstr "Schlagwörter mit Kommas trennen"
 
 #. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-awards-cpt.php:468 includes/class-awards-cpt.php:591
+#: includes/class-awards-cpt.php:466
 #, php-format
 msgid "Show All %s"
 msgstr "Alle  %s anzeigen"
 
-#: includes/class-awards-cpt.php:508
+#. Plugin Name of the plugin
+#: sof-awards.php
+msgid "SOF Awards"
+msgstr "SOF Auszeichnungen"
+
+#: includes/class-awards-cpt.php:209
+msgid "Spirit of Football Awards"
+msgstr "Spirit of Football Auszeichnungen"
+
+#: includes/class-awards-cpt.php:507
 msgctxt "taxonomy general name"
 msgid "Award Tags"
-msgstr ""
+msgstr "Schlagwörter"
 
-#: includes/class-awards-cpt.php:509
+#: includes/class-awards-cpt.php:383
+msgctxt "taxonomy general name"
+msgid "Award Types"
+msgstr "Kategorien"
+
+#: includes/class-awards-cpt.php:508
 msgctxt "taxonomy singular name"
 msgid "Award Tag"
-msgstr ""
+msgstr "Schlagwort"
 
-#: includes/class-awards-cpt.php:510
-msgid "Search Award Tags"
-msgstr ""
+#: includes/class-awards-cpt.php:384
+msgctxt "taxonomy singular name"
+msgid "Award Type"
+msgstr "Kategorie"
 
-#: includes/class-awards-cpt.php:511
-msgid "All Award Tags"
-msgstr ""
-
-#: includes/class-awards-cpt.php:512
-msgid "Parent Award Tag"
-msgstr ""
+#: includes/class-awards-acf.php:180
+msgid "The \"Badge\" of the Award."
+msgstr "Das „Abzeichen“ der Auszeichnung."
 
 #: includes/class-awards-cpt.php:513
-msgid "Parent Award Tag:"
-msgstr ""
-
-#: includes/class-awards-cpt.php:514
-msgid "Edit Award Tag"
-msgstr ""
-
-#: includes/class-awards-cpt.php:515
 msgid "Update Award Tag"
-msgstr ""
+msgstr "Schlagwort aktualisieren"
 
-#: includes/class-awards-cpt.php:516
-msgid "Add New Award Tag"
-msgstr ""
+#: includes/class-awards-cpt.php:390
+msgid "Update Award Type"
+msgstr "Kategorie aktualisieren"
 
-#: includes/class-awards-cpt.php:517
-msgid "New Award Tag Name"
-msgstr ""
+#: includes/class-awards-acf.php:279
+msgid "Use this field to describe the Award."
+msgstr "Verwenden Sie dieses Feld, um die Auszeichnung zu beschreiben."
 
-#: includes/class-awards-cpt.php:518
-msgid "Award Tags"
-msgstr ""
+#: includes/class-awards-cpt.php:195
+msgid "View Award"
+msgstr "Auszeichnung ansehen"
 
-#: includes/class-awards-cpt.php:519
-msgid "No Award Tags found"
-msgstr ""
+#: includes/class-awards-acf.php:204
+msgid "Who gave this Award? Examples: DFB, etc."
+msgstr "Wer hat diese Auszeichnung verliehen? Beispiele: DFB usw."
+
+#: includes/class-awards-acf.php:250
+msgid "Year"
+msgstr "Jahr"

@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-06T10:57:36+00:00\n"
+"POT-Creation-Date: 2025-09-09T11:05:52+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: sof-awards\n"
@@ -119,181 +119,184 @@ msgstr ""
 msgid "Link"
 msgstr ""
 
-#: includes/class-awards-cpt.php:190
-#: includes/class-awards-cpt.php:201
+#: includes/class-awards-cpt.php:188
+#: includes/class-awards-cpt.php:199
 msgid "Awards"
 msgstr ""
 
-#: includes/class-awards-cpt.php:191
+#: includes/class-awards-cpt.php:189
 msgid "Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:192
+#: includes/class-awards-cpt.php:190
 msgid "Add New"
 msgstr ""
 
-#: includes/class-awards-cpt.php:193
+#: includes/class-awards-cpt.php:191
 msgid "Add New Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:194
+#: includes/class-awards-cpt.php:192
 msgid "Edit Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:195
+#: includes/class-awards-cpt.php:193
 msgid "New Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:196
+#: includes/class-awards-cpt.php:194
 msgid "All Awards"
 msgstr ""
 
-#: includes/class-awards-cpt.php:197
+#: includes/class-awards-cpt.php:195
 msgid "View Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:198
+#: includes/class-awards-cpt.php:196
 msgid "Search Awards"
 msgstr ""
 
-#: includes/class-awards-cpt.php:199
+#: includes/class-awards-cpt.php:197
 msgid "No matching Award found"
 msgstr ""
 
-#: includes/class-awards-cpt.php:200
+#: includes/class-awards-cpt.php:198
 msgid "No Awards found in Trash"
 msgstr ""
 
-#: includes/class-awards-cpt.php:211
+#: includes/class-awards-cpt.php:209
 msgid "Spirit of Football Awards"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:275
+#: includes/class-awards-cpt.php:273
 #, php-format
 msgid "Award updated. <a href=\"%s\">View Award</a>"
 msgstr ""
 
-#: includes/class-awards-cpt.php:280
+#: includes/class-awards-cpt.php:278
 msgid "Custom field updated."
 msgstr ""
 
-#: includes/class-awards-cpt.php:281
+#: includes/class-awards-cpt.php:279
 msgid "Custom field deleted."
 msgstr ""
 
-#: includes/class-awards-cpt.php:282
+#: includes/class-awards-cpt.php:280
 msgid "Award updated."
 msgstr ""
 
 #. translators: %s: The date and time of the revision.
-#: includes/class-awards-cpt.php:291
+#: includes/class-awards-cpt.php:289
 #, php-format
 msgid "Award restored to revision from %s"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:302
+#: includes/class-awards-cpt.php:300
 #, php-format
 msgid "Award published. <a href=\"%s\">View Award</a>"
 msgstr ""
 
-#: includes/class-awards-cpt.php:307
+#: includes/class-awards-cpt.php:305
 msgid "Award saved."
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:312
+#: includes/class-awards-cpt.php:310
 #, php-format
 msgid "Award submitted. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
 msgstr ""
 
 #. translators: 1: The date, 2: The permalink.
-#: includes/class-awards-cpt.php:319
+#: includes/class-awards-cpt.php:317
 #, php-format
 msgid "Award scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview Award</a>"
 msgstr ""
 
 #. translators: Publish box date format - see https://php.net/date
-#: includes/class-awards-cpt.php:321
+#: includes/class-awards-cpt.php:319
 msgid "M j, Y @ G:i"
 msgstr ""
 
 #. translators: %s: The permalink.
-#: includes/class-awards-cpt.php:328
+#: includes/class-awards-cpt.php:326
 #, php-format
 msgid "Award draft updated. <a target=\"_blank\" href=\"%s\">Preview Award</a>"
 msgstr ""
 
-#: includes/class-awards-cpt.php:355
+#: includes/class-awards-cpt.php:353
 msgid "Add an identifying name for the Award"
 msgstr ""
 
-#: includes/class-awards-cpt.php:385
+#: includes/class-awards-cpt.php:383
 msgctxt "taxonomy general name"
 msgid "Award Types"
 msgstr ""
 
-#: includes/class-awards-cpt.php:386
+#: includes/class-awards-cpt.php:384
 msgctxt "taxonomy singular name"
 msgid "Award Type"
 msgstr ""
 
-#: includes/class-awards-cpt.php:387
+#: includes/class-awards-cpt.php:385
 msgid "Search Award Types"
 msgstr ""
 
-#: includes/class-awards-cpt.php:388
+#: includes/class-awards-cpt.php:386
 msgid "All Award Types"
 msgstr ""
 
-#: includes/class-awards-cpt.php:389
+#: includes/class-awards-cpt.php:387
 msgid "Parent Award Type"
 msgstr ""
 
-#: includes/class-awards-cpt.php:390
+#: includes/class-awards-cpt.php:388
 msgid "Parent Award Type:"
 msgstr ""
 
-#: includes/class-awards-cpt.php:391
+#: includes/class-awards-cpt.php:389
 msgid "Edit Award Type"
 msgstr ""
 
-#: includes/class-awards-cpt.php:392
+#: includes/class-awards-cpt.php:390
 msgid "Update Award Type"
 msgstr ""
 
-#: includes/class-awards-cpt.php:393
+#: includes/class-awards-cpt.php:391
 msgid "Add New Award Type"
 msgstr ""
 
-#: includes/class-awards-cpt.php:394
+#: includes/class-awards-cpt.php:392
 msgid "New Award Type Name"
 msgstr ""
 
-#: includes/class-awards-cpt.php:395
+#: includes/class-awards-cpt.php:393
 msgid "Award Types"
 msgstr ""
 
-#: includes/class-awards-cpt.php:396
+#: includes/class-awards-cpt.php:394
 msgid "No Award Types found"
 msgstr ""
 
 #. translators: %s: The plural name of the taxonomy terms.
-#: includes/class-awards-cpt.php:468
-#: includes/class-awards-cpt.php:591
+#: includes/class-awards-cpt.php:466
 #, php-format
 msgid "Show All %s"
 msgstr ""
 
-#: includes/class-awards-cpt.php:508
+#: includes/class-awards-cpt.php:507
 msgctxt "taxonomy general name"
 msgid "Award Tags"
 msgstr ""
 
-#: includes/class-awards-cpt.php:509
+#: includes/class-awards-cpt.php:508
 msgctxt "taxonomy singular name"
 msgid "Award Tag"
+msgstr ""
+
+#: includes/class-awards-cpt.php:509
+msgid "Award Tags"
 msgstr ""
 
 #: includes/class-awards-cpt.php:510
@@ -305,33 +308,37 @@ msgid "All Award Tags"
 msgstr ""
 
 #: includes/class-awards-cpt.php:512
-msgid "Parent Award Tag"
-msgstr ""
-
-#: includes/class-awards-cpt.php:513
-msgid "Parent Award Tag:"
-msgstr ""
-
-#: includes/class-awards-cpt.php:514
 msgid "Edit Award Tag"
 msgstr ""
 
-#: includes/class-awards-cpt.php:515
+#: includes/class-awards-cpt.php:513
 msgid "Update Award Tag"
 msgstr ""
 
-#: includes/class-awards-cpt.php:516
+#: includes/class-awards-cpt.php:514
 msgid "Add New Award Tag"
 msgstr ""
 
-#: includes/class-awards-cpt.php:517
+#: includes/class-awards-cpt.php:515
 msgid "New Award Tag Name"
 msgstr ""
 
+#: includes/class-awards-cpt.php:516
+msgid "No Award Tags found"
+msgstr ""
+
+#: includes/class-awards-cpt.php:517
+msgid "Popular Award Tags"
+msgstr ""
+
 #: includes/class-awards-cpt.php:518
-msgid "Award Tags"
+msgid "Separate Award Tags with commas"
 msgstr ""
 
 #: includes/class-awards-cpt.php:519
-msgid "No Award Tags found"
+msgid "Add or remove Award Tag"
+msgstr ""
+
+#: includes/class-awards-cpt.php:520
+msgid "Choose from the most popular Award Tags"
 msgstr ""
